@@ -1,4 +1,4 @@
-## What is it good for ?
+## What is this script good for ?
 Consensus files of TE sequences often need a tedious pre-processing : LTR transposable elements are splitted between their intern and LTR parts. If you want to use those TE sequences for an alignment, you have to restore the real sequence of these TEs by flanking the intern part with the LTR part (like this : LTR|Intern|LTR ).
 
 The goal of this script is to simplify this task and to provide a correctly reconstructed new fasta file.
@@ -33,6 +33,7 @@ ex :
 
 Notes :
 
-TE sequences that are not present in the dictionnary are written as such in the output.  
-The name used to describe the whole TE in the new fasta will correspond to the name of the intern part. (TODO : maybe give the option of providing a third column with TE names ?)
+All TE sequences that are present in the fasta must be represented in the dictionnary.
+TODO : Maybe add the option to directly output TE sequences that are not written in the dictionnary.
+This can be easily implemented and tested by removing a random TE from the dictionnary...
 
