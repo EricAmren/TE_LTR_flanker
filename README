@@ -17,11 +17,13 @@ dictionnary example :
 
 OR generate it automatically using 'generate_dictionnary.py' script and the default list of suffixes ("standard_suffixes.tsv"):
 
-`./generate_dictionnary.py -f families.fa --suffix standard_suffixes.tsv -o families.dictionnary.tsv`
+`./generate_dictionnary.py -f families.fa -o families.dictionnary.tsv`
 
 You can also specify a custom list of suffixes in a tsv file, with the first line being the list of intern suffixes, and the second line being the list of LTR suffixes, separated with tabs.
 
-ex :  
+`./generate_dictionnary.py -f families.fa --suffix custom_suffixes.tsv -o families.dictionnary.tsv`
+
+example of suffix tsv file :  
 `_I -I_DM`  
 `_LTR   -LTR_DM`
 
